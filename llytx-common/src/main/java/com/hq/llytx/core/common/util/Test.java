@@ -13,16 +13,12 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package com.hq.llytx.core;
+package com.hq.llytx.core.common.util;
 
 /**
  * @Author: huangqun
- * @Date: 2019/3/18 下午3:10
+ * @Date: 2019/3/18 下午3:34
  * @Version 1.0.0
  */
-public class BootStrap {
-
-	public static void main(String[] args) {
-		System.out.println("llytx start");
-	}
+public class Test {
 }
