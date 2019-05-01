@@ -48,4 +48,92 @@ public class TxEvent implements Serializable {
 	private Date createTime;
 
 	private Date modifyTime;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getAppId() {
+		return appId;
+	}
+
+	public void setAppId(String appId) {
+		this.appId = appId;
+	}
+
+	public String getProcessId() {
+		return processId;
+	}
+
+	public void setProcessId(String processId) {
+		this.processId = processId;
+	}
+
+	public String getStubId() {
+		return stubId;
+	}
+
+	public void setStubId(String stubId) {
+		this.stubId = stubId;
+	}
+
+	public int getStatus() {
+		return status;
+	}
+
+	public void setStatus(int status) {
+		this.status = status;
+	}
+
+	public String getTxType() {
+		return txType;
+	}
+
+	public void setTxType(String txType) {
+		this.txType = txType;
+	}
+
+	public int getExecuteTimes() {
+		return executeTimes;
+	}
+
+	public void setExecuteTimes(int executeTimes) {
+		this.executeTimes = executeTimes;
+	}
+
+	public int getReverseLookupSwitch() {
+		return reverseLookupSwitch;
+	}
+
+	public void setReverseLookupSwitch(int reverseLookupSwitch) {
+		this.reverseLookupSwitch = reverseLookupSwitch;
+	}
+
+	public String getLatestExecuteTrace() {
+		return latestExecuteTrace;
+	}
+
+	public void setLatestExecuteTrace(String latestExecuteTrace) {
+		this.latestExecuteTrace = latestExecuteTrace;
+	}
+
+	public Date getCreateTime() {
+		return createTime;
+	}
+
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
+	}
+
+	public Date getModifyTime() {
+		return modifyTime;
+	}
+
+	public void setModifyTime(Date modifyTime) {
+		this.modifyTime = modifyTime;
+	}
 }
