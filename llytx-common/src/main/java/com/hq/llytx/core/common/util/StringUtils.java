@@ -15,10 +15,30 @@
  */
 package com.hq.llytx.core.common.util;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @Author: huangqun
- * @Date: 2019/3/18 下午3:34
+ * @Date: 2019-05-01 23:46
  * @Version 1.0.0
  */
-public class Test {
+public class StringUtils {
+
+    public static boolean hasLength(CharSequence str) {
+        return str != null && str.length() > 0;
+    }
+
+    public static boolean hasText(CharSequence str) {
+        if(hasLength(str)) {
+            int length = str.length();
+            for (int i=0; i<length; i++) {
+                if(!Character.isWhitespace(str.charAt(i))) return true;
+            }
+            return false;
+        } else {
+            return false;
+        }
+    }
+
 }
