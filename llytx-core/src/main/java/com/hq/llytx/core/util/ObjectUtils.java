@@ -13,29 +13,24 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package com.hq.llytx.core.dao;
+package com.hq.llytx.core.util;
 
-import com.hq.llytx.core.common.util.Assert;
-import com.hq.llytx.core.model.TxEvent;
-
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.util.Collection;
 
 /**
  * @Author: huangqun
- * @Date: 2019-05-01 15:37
+ * @Date: 2019-05-01 23:46
  * @Version 1.0.0
  */
-public class TxEventDAO {
+public class ObjectUtils {
 
-    public TxEvent selectById(Long id) {
-        Assert.notNull(id, "id is null");
-
-        PreparedStatement pstmt = null;
-        ResultSet rs = null;
-        TxEvent event = null;
-
-        return null;
+    public static boolean isEmpty(Collection<?> c) {
+        return c == null || c.size()== 0;
     }
+
+    public static boolean isEmpty(Object[] array) {
+        return array == null || array.length == 0;
+    }
+
 
 }

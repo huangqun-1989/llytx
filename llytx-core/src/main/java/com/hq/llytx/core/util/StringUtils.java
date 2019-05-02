@@ -13,29 +13,29 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package com.hq.llytx.core.dao;
-
-import com.hq.llytx.core.common.util.Assert;
-import com.hq.llytx.core.model.TxEvent;
-
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+package com.hq.llytx.core.util;
 
 /**
  * @Author: huangqun
- * @Date: 2019-05-01 15:37
+ * @Date: 2019-05-01 23:46
  * @Version 1.0.0
  */
-public class TxEventDAO {
+public class StringUtils {
 
-    public TxEvent selectById(Long id) {
-        Assert.notNull(id, "id is null");
+    public static boolean hasLength(CharSequence str) {
+        return str != null && str.length() > 0;
+    }
 
-        PreparedStatement pstmt = null;
-        ResultSet rs = null;
-        TxEvent event = null;
-
-        return null;
+    public static boolean hasText(CharSequence str) {
+        if(hasLength(str)) {
+            int length = str.length();
+            for (int i=0; i<length; i++) {
+                if(!Character.isWhitespace(str.charAt(i))) return true;
+            }
+            return false;
+        } else {
+            return false;
+        }
     }
 
 }
